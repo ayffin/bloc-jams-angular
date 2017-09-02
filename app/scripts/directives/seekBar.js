@@ -1,5 +1,5 @@
 (function() {
-  function seekBar() {
+  function seekBar($document) {
     /*
      * @function calculatePercent
      * @desc calculate where a  user clicked and distance from seekbar
@@ -60,6 +60,16 @@
           };
         };
         /*
+         * @function thumbStyle
+         * @desc updates the position of thumb
+
+         */
+        scope.thumbStyle = function() {
+          return {
+            left: percentString()
+          };
+        };
+        /*
          * @function onClickSeekBar
          * @desc update the seekbar vlaue based on where user clicked
          * @param {Object} event
@@ -76,9 +86,14 @@
         scope.trackThumb = function() {
           $document.bind('mousemove.thumb', function(event) {
             var percent = calculatePercent(seekBar, event);
+
+
             scope.$apply(function() {
               scope.value = percent * scope.max;
             });
+
+
+
           });
 
           $document.bind('mouseup.thumb', function() {
