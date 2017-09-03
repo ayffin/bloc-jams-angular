@@ -21,6 +21,16 @@
         url: '/collection',
         controller: 'CollectionCtrl as collection',
         templateUrl: '/templates/collection.html'
+      })
+      .state('login', {
+        url: '/login',
+        controller: 'RegisterCtrl',
+        templateUrl: '/templates/login.html'
+      })
+      .state('register', {
+        url: '/register',
+        controller: 'RegisterCtrl',
+        templateUrl: '/templates/register.html'
       });
   }
 

@@ -1,0 +1,80 @@
+input {
+  width: 100%;
+  display: inline-block;
+  font-weight: 100;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #475B62;
+  border: 1px solid #C5C5C5;
+  border-radius: 4px;
+  outline: 0;
+}
+
+input[type=radio] {
+  width: auto;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  padding: 12px 54px;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #C61C6F;
+  color: white;
+  background-color: #2D8BCF;
+  background-size: 18px 18px;
+  min-width: 28px;
+  min-height: 28px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #DC322F;
+}
+
+.text {
+  text-align: center;
+}
+
+.link {
+  color: red;
+}
+
+.linkp {
+  text-align: center;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid #da3637;
+}
+
+input.ng-valid.ng-touched {
+  border: 5px solid #509d12;
+}
+
+.ng-invalid .btn {
+  background: gray;
+}
+
+.error {
+  color: red;
+  padding-bottom: 10px;
+}

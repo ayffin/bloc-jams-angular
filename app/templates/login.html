@@ -1,0 +1,27 @@
+<section>
+  <form name="myform"
+ng-submit='login()';
+  novalidate>
+    <div class="text">
+      <h1>Login</h1>
+      <p> Please Log in to access all the features </p>
+      <p ng-show='mess'>{{mess}}</p>
+    </div>
+    <fieldset>
+      <input type="email" name="email" placeholder="Type your Email"
+      ng-model='user.email' ng-required='true'>
+      <p class="error validationerror"
+      ng-show="myform.email.$invalid && myform.email.$touched">
+      Must be a valid email</p>
+      <input type="password" name="password" placeholder="password"
+      ng-model='user.password' ng-required='true'>
+      <p class="error validationerror"
+      ng-show="myform.password.$invalid && myform.password.$touched">
+      Password is required</p>
+    </fieldset>
+    <button type="submit" name="btn" class="btn"
+    ng-disabled='myform.$invalid'>Login</button>
+    <p class='linkp'> or <a ui-sref="register" class='link'>register</a></p>
+
+  </form>
+</section>
